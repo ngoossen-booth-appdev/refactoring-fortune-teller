@@ -8,6 +8,7 @@ class FireController < ApplicationController
     all_zodiacs = Zodiac.list
     this_zodiac = all_zodiacs.fetch(:aries)
     @horoscope = this_zodiac.fetch(:horoscope)
+    
     @array_of_numbers = Array.new
 
     5.times do
